@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# testcase.sh <directory> <STARTING_TEST> <FINISHING_TEST>
+# ./testcase.sh <ProblemNumber> <STARTING_TEST> <FINISHING_TEST>
 
 if [[ $# -ne 3 ]]
 then

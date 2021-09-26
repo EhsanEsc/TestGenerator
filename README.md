@@ -33,17 +33,17 @@ Generated files are
 
 Optional files [NOT ADDED YET #WIP#]
 	
-	"tester.cpp" instead of out folder -> output checker instead of checking diffrence with sol.cpp output
+	"tester.cpp" instead of out folder -> output checker instead of checking difference with sol.cpp output
   	"in_gen_subtaskX.cpp" files -> multiple input generator for each subtask instead of one file
   	"a.py" -> used for python code testing
 
 ### Test Generator
 
-	./testcase.sh <ProblemNumber> <STARTING_TEST> <FINISHING_TEST>
-	
-Create tests for desierd problem from index <STARTING_TEST> to <FINISHING_TEST> and test them with "a.cpp".
+	./testcase_gen.sh <ProblemNumber> <STARTING_TEST> <FINISHING_TEST>
 
-You can use "in_gen.sh" and "out_gen.sh" seperatly with exact syntax also.
+Create tests for desired problem from index <STARTING_TEST> to <FINISHING_TEST> and test them with "a.cpp".
+
+You can use "in_gen.sh" and "out_gen.sh" separately with exact syntax also.
 
 This script create tests with "in_gen.cpp" stored them in "in" folder THEN generate outputs with "sol.cpp" and store them in "out" folder 
 
@@ -54,7 +54,7 @@ Then test "a.cpp" with them for double checking.
 
 	./tester.sh <ProblemNumber> [STARTING_TEST] [FINISHING_TEST]
 
-Run all of testcases(or from desierd start to finish) on "a.cpp" then print results
+Run all of test cases(or from desired start to finish) on "a.cpp" then print results
 
 # Work In Progress
 
@@ -62,8 +62,10 @@ Run all of testcases(or from desierd start to finish) on "a.cpp" then print resu
 2. Add subtask input generation
 3. Add small library for generating random stuff
 4. Add Tester.cpp support for code testing
-5. Add some CLI for auto generating stuff
-6. Rewrite readme : )
+5. Add input limitation check
+6. Add more robustness for codes
+7. Add some CLI for auto generating stuff
+8. Rewrite readme : )
 
 # Contact
 
